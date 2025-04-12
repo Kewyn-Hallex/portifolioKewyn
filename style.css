@@ -31,7 +31,6 @@
 
 @media (max-width: 680px) {
     .witheBox {
-        margin: auto;
         width: 90%;
     }
 }
@@ -280,8 +279,43 @@
     margin-top: 60px;
 }
 
+.titulo-repositorio {
+    font-family: "Poppins", sans-serif;
+    font-style: oblique;
+    text-align: center;
+    margin-top: -30px;
+    filter: drop-shadow(0px 0px 10px #2d4a53);
+}
+
+.repositorio-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* espaço entre os ícones */
+    margin-top: 10px;
+}
+
+.repositorio {
+    width: 25px; /* opcional: define tamanho fixo */
+    height: auto;
+    margin-top: -10px;
+}
+
 .d-block {
     filter: drop-shadow(0px 0px 10px #2d4a53);
+}
+
+.hidden-right {
+    opacity: 0;
+    transform: translateX(100%);
+    filter: blur(10px);
+    transition: all 1s;
+}
+
+.show-right {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+    transition: all 1s;
 }
 
 .hidden {
