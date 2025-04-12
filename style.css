@@ -23,7 +23,7 @@
 .witheBox {
     margin-top: -50px;
     width: 450px;
-    height: 800px;
+    height: 1100px;
     background-color: white;
     box-shadow: rgba(45, 74, 83, 0.50) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 20px;
@@ -274,4 +274,63 @@
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: brightness(0) saturate(100%) invert(19%) sepia(15%) saturate(475%) hue-rotate(152deg) brightness(90%) contrast(85%);
+}
+
+.carousel {
+    margin-top: 60px;
+}
+
+.d-block {
+    filter: drop-shadow(0px 0px 10px #2d4a53);
+}
+
+.hidden {
+    margin-top: 50px;
+    opacity: 0;
+    transform: translateY(-100%);
+    filter: blur(10px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition: all 1s;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 5px;
+}
+
+.logos :nth-child(2){
+    transition-delay: 350ms;
+}
+.logos :nth-child(3){
+    transition-delay: 450ms;
+}
+.logos :nth-child(4){
+    transition-delay: 550ms;
+}
+.logos :nth-child(5){
+    transition-delay: 650ms;
+}
+.logos :nth-child(6){
+    transition-delay: 750ms;
+}
+.logos :nth-child(7){
+    transition-delay: 850ms;
+}
+.logos :nth-child(8){
+    transition-delay: 950ms;
 }
