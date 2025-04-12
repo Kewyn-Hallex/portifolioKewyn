@@ -13,7 +13,7 @@ const handleIcons = (scrollVal) => {
 };
 
 const smoothScroll = (direction) => {
-    const scrollStep = direction === "left" ? -20 : 20;
+    const scrollStep = direction === "left" ? -100 : 100;
     let scrollAmount = 0;
     const slideTimer = setInterval(() => {
         tabsBox.scrollLeft += scrollStep;
